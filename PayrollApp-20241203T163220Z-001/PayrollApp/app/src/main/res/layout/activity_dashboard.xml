@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backg12">
+
+    <!-- Top Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#228B22"
+        android:padding="8dp">
+
+        <!-- Logo Placeholder -->
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="36dp"
+            android:background="@drawable/logo1"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- Center Menu Items -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#FFFFFF"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timecard"
+                android:textColor="#FFFFFF"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="#FFFFFF"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- User Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Hi, Admin!"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Scrollable Horizontal Table -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Table Header Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#DDDDDD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Employee Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Username"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Working Hours"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Salary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Actions"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- RecyclerView to Handle Employee Rows Dynamically -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Total Summary Row -->
+
+    <!-- Add Logout Button -->
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:text="Total Working Hours:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotalHours"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Total Salary:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotalSalary"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="PHP 0.00"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="377dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

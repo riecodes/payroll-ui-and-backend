@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backg5">
+
+    <EditText
+        android:id="@+id/etWorkingHours"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Working Hours"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Salary"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:backgroundTint="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:text="Done" />
+
+</LinearLayout>

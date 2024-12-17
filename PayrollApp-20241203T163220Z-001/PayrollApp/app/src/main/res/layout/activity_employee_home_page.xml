@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backg4"
+    >
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="321dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="      Welcome,
+        [Employee Name]!"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Total Working Hours -->
+
+    <!-- Total Salary -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/photo_placeholder" />
+
+    <TextView
+        android:id="@+id/tvTotalWorkingHours"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+
+        android:text="  Total Working Hours: 0"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvTotalSalary"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:text="  Total Salary: 0.00"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnViewPayslip"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/black"
+        android:text="View Payslip"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>
+
